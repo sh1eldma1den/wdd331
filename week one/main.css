@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h1 {
+    font-family: 'Lora', Georgia, serif;
+    color: #333;
+    font-size: 3rem;
+}
+h2 {
+    font-family: 'Lora', Georgia, serif;
+    font-size:16pt;
+}
+p {
+    font-family: Helvetica, Arial, sans-serif;
+}
+header {
+    font-family: 'Lora', Georgia, serif;
+    margin:0;
+    text-align:center;
+}
+header a {
+    text-decoration: none;
+    color: #333;
+    padding: 2rem;
+}
+nav ul::before, nav ul::after {
+    content: "";
+    position: absolute;
+    left:0px;
+    height  : 1px;
+    width   : 360px;  /* or 100px */
+    border-bottom:1px solid #d0d0d0;
+}
+nav{
+    display:flex;
+    flex-direction:column;
+}
+nav ul li {
+   text-transform: uppercase;
+   font-weight:bold;
+   font-size:14pt;
+   list-style: none;
+    padding: .5rem;
+}
+nav ul li a, nav ul li a:visited {
+    color: #666;
+}
+nav ul li a:hover {
+    color: #00ddff;
+    text-decoration: underline;
+}
+nav ul li a:active {
+    color:#DEB887;
+}
+body {
+    padding:0;
+    margin:0;
+}
+main {
+    padding:1rem;
+}
+article {
+    background-color: white;
+    max-height: fit-content;
+}
+.post-date {
+    font-family: 'Lora', Georgia, serif;
+    text-align: right;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 16pt;
+}
+.post-content::before {
+    content: "";
+    position: absolute;
+    left:0px;
+    height  : 1px;
+    width   : 360px;  /* or 100px */
+    border-top:1px solid #d0d0d0;
+}
+.post-content{
+    padding-top: 1rem;
+}
+.post-content h2 {
+    font-size: 16pt;
+}
+.post-content h2 a {
+    color:#666;
+    text-decoration: none;
+}
+.post-content h2 a:hover{
+    color: #6495ED;
+    text-decoration: underline;
+}
+.post-content h2 a:active {
+    color: #DEB887;
+}
+.post-content figure img {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.post-content p a,
+.post-content p a:visited {
+    color: #666;
+    text-decoration: none;
+}
+.post-content p a:hover {
+    text-decoration: underline;
+    color: #00ddff;
+}
+.post-content p a:active {
+    color: #DEB887;
+}
+
+@media only screen and (min-width: 32.5em) {
+
+    header {
+        padding-left: 3rem;
+        font-size: 65%;
+    }
+    header a {
+        padding:1rem;
+    }
+    nav ul {
+        display: flex;
+        flex-direction:row-reverse;
+        padding: 1rem;
+    }
+    nav ul li {
+        padding:unset;
+        padding: .5rem;
+    }
+    main {
+        padding: 1rem 3rem;
+        font-size: 75%;
+    }
+    article{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .post-date {
+        grid-column: 1,2;
+        border-right:1px solid #d0d0d0;
+    }
+    .post-content::before {
+        display:none;
+    }
+    section{
+        display:flex;
+        flex-direction:column;
+    }
+    .post-content{
+        grid-column:2,4;
+        padding: 1rem;
+    }
+    .post-content h2 {
+        font-size: x-large;
+        margin-bottom: 3rem;
+    }
+    .post-content figure img {
+        margin-left: 20%;
+    }
+    .post-content::after{
+        content: "";
+        position: absolute;
+        left:0px;
+        height  : 1px;
+        width   : 360px;  /* or 100px */
+        border-bottom:1px solid #d0d0d0;
+    }
+}

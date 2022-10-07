@@ -1,0 +1,62 @@
+body {
+  background-color: darkred;
+}
+
+h1 {
+  color: white;
+}
+
+#contactform {
+  background-color: rgb(196, 184, 131);
+}
+#contactform input, #contactform textarea {
+  background-color: rgb(250, 241, 216);
+  flex: 2;
+}
+@media (min-width: 20em) {
+  #contactform {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+@media (max-width: 20em) {
+  fieldset > div {
+    margin: 0;
+  }
+}
+@media (max-width: 60em) {
+  fieldset > div {
+    margin-left: 20%;
+  }
+}
+
+fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+#content {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
