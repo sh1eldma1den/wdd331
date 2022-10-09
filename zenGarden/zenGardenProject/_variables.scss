@@ -1,11 +1,10 @@
 //variables used in zen garden styling
-
-$fonts-headline: ;
-$fonts-body: ;
-$background-color: ;
-$primary: ;
-$accent1: ;
-$accent2: ;
-$sidebar: ;
-$text-dark: ;
-$text-light: ;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap');
+$fonts-headline: 'Ubuntu', sanserif;
+$fonts-body: 'Roboto', sanserif;
+$background-color: #E1EDAB;
+$primary: #01110A;
+$accent1: #52B62B;
+$accent2: #8f5c38;
+$text-dark: #01110A;
+$text-light: #E1EDAB;

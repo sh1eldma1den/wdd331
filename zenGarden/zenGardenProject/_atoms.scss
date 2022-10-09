@@ -2,37 +2,28 @@
 @use 'variables' as *;
 
 //mixins to handle repeated patterns
-@mixin {
-;
+@mixin uppercase($color: $text-dark) {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color;
 }
 
 //basic atom stlyes
 h2,
 h3,
 h4 {
-    font-family:;
+    font-family:$fonts-headline;
 }
 
 h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
+    font-family:$fonts-headline
 }
 
 p {
-
+    font-family: $fonts-body;
 }
 
 a {
-
+    color: $accent2;
 }
